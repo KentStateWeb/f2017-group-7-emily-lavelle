@@ -3,5 +3,5 @@ body {
 }
 
 .logo {
-	background-image: url(assets/images/logo.png);
+	background-image: url('assets/images/logo.png');
 }

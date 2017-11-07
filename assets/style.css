@@ -1,7 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Rozha+One');
+
+
 body {
 	background-color: #e2e2e2;
+	margin: 0;
 }
 
-.logo {
-	background-image: url('assets/images/logo.png');
+header {
+	background-color: white;
+	height: 100px;
+	background-image: url(images/logo.png);
+	background-size: 250px;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0;
+	background-position: center;
+	padding: 20px 0px;
 }
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+
+
+section {
+	padding: 20px 30px;
+	margin: 20px;
+}
+
+hr {
+	width: 40%;
+	color: #373d42;
+	height: 10px;
+	background-color: #373d42;
+	margin-top: 30px;
+}
+
+.row {
+	max-width: 100%;
+}
+
+.quote p {
+	font-family: 'Rozha One', serif;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.quotation {
+	text-align: center;
+	font-size: 6em!important;
+	padding: 0px;
+	color: #88b04b;
+	height: 73px;
+
+}
+
+.colors {
+	background-color: white;
+}
+
+.colors ul {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.colors li {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.color-1 {
+	background-color: #e2e2e2;
+}
+.color-2 {
+	background-color: #9de7d7;
+}
+.color-3 {
+	background-color: #88b04b;
+}
+.color-4 {
+	background-color: #798e96;
+}
+.color-5 {
+	background-color: #373d42;
+}
+
+.icons ul {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.icons li {
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+	display: inline-block;
+	background-color: #798e96;
+	border-radius: 8px;
+}
+
+.icon-1 {
+	background-image: url(images/bridal.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+.icon-2 {
+	background-image: url(images/haircut.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+.icon-3 {
+	background-image: url(images/makeup.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
+.icon-4 {
+	background-image: url(images/nails.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45px;
+}
+.icon-5 {
+	background-image: url(images/spa.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+
+.icon-1:hover,.icon-2:hover,.icon-3:hover,.icon-4:hover,.icon-5:hover {
+	background-color: #556166;
+	cursor: pointer;
+}
+
+.stylist {
+	background-image: url(images/stylist.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+	height: 240px;
+
+}
+
+@media only screen and (min-width: 600px) {
+	section {
+		margin: 35px;
+		padding: 10px 15px;
+	}
+
+	.colors, .intro {
+		width: 50%;
+	}
+
+
+	.row {
+		display: inline-flex;
+	}
+
+}
+
+@media only screen and (min-width: 900px) {
+	
+	
+}
+

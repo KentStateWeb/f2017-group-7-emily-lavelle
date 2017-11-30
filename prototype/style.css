@@ -2,20 +2,52 @@
 	box-sizing: border-box;
 }
 
+/*Mobile Columns*/
+	.m-col-12 {
+		width: 100%;
+	}
+	.m-col-6 {
+		width: 50%;
+	}
+	.m-col-4 {
+		width: 33%;
+	}
+	.m-col-3 {
+		width: 25%;
+	}
+	/*End Columns*/
+
 img {
 	max-width: 100%;
 }
 
 body {
-  max-width: 1000px;
-  padding: 1em;
+/*  max-width: 1000px;*/
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
-div, section, main, aside, header, footer {
-  border: 1px solid lightgray;
-  padding: .5em;
+section, main, aside {
+  padding: 1em;
   margin-bottom: 1em;
+}
+
+nav {
+	z-index: 10000;
+}
+
+header {
+	background-image: url(../assets/images/banner2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+/*Headings*/
+h1, h2 {
+	color: #88b04b;
+	text-align: center;
 }
 
 /*Nav Styles - Mobile*/
@@ -23,34 +55,178 @@ div, section, main, aside, header, footer {
 nav {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	padding: 0 auto;
 }
 
 .nav-social {
-	background-color: #373d42;
+	background-color: white;
+	text-align: right;
+	background-image: url(../assets/images/logo.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	padding: 40px 8px;
+	background-position: left;
+	background-origin: content-box;
 }
 
-.nav-pages {
-	background-color: #fff;
+.nav-social p{
+	margin: 0;
 }
 
-.nav-pages ul {
+
+.m-nav-pages ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	display: inline-flex;
+	background-color: #373d42;
+	padding: 20px 0px;
 }
 
-.nav-pages li {
-	padding-left: 10px;
+.m-nav-pages li {
+	text-align: center;
+}
+
+.m-nav-pages a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.m-nav-pages li a:hover {
+	border-bottom: 4px solid #88b04b;
+
+}
+
+.nav-btn {
+	display: inline-block;
+	background-color:#88b04b;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+.nav-pages {
+	display: none;
 }
 
 /*End Nav Styles*/
+
+/*Body Styles*/
+
+.intro p {
+	line-height: 35px;
+}
+
+/*End Body Styles*/
+
+/*Icon Styles*/
+.icons ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.icons li {
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	display: inline-block;
+	background-color: #556166;
+	border-radius: 8px;
+}
+
+.icon-1 {
+	background-image: url(../assets/images/bridal.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+.icon-2 {
+	background-image: url(../assets/images/haircut.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+.icon-3 {
+	background-image: url(../assets/images/makeup.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
+.icon-4 {
+	background-image: url(../assets/images/nails.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45px;
+}
+.icon-5 {
+	background-image: url(../assets/images/spa.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+
+.icon-1:hover,.icon-2:hover,.icon-3:hover,.icon-4:hover,.icon-5:hover {
+	background-color: #373d42;
+	cursor: pointer;
+}
+
+.icon-title {
+    position: relative;
+    top: 107%;
+    font-weight: 600;
+    text-align: center;
+    color: #556166;
+}
+
+.bridal {
+	left: 25%;
+}
+
+.hair {
+	left: 35%;
+}
+
+.makeup {
+	left: 20%;
+}
+
+.nails {
+	left: 30%;
+}
+
+.spa {
+	left: 33%;
+}
+/*End Icon Styles*/
 
 @media screen and (min-width: 600px) {
 	/*Nav Styles - Tablet/Desktop*/
 	nav {
 		position: relative;
 	}
+
+	.m-nav-pages {
+		display: none;
+	}
+
+	.nav-pages {
+		display: block;
+	}
 	/*End Nav Styles*/
+
+	/*Desktop/Tablet Columns*/
+	.col-12 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-4 {
+		width: 33%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	/*End Columns*/
 }

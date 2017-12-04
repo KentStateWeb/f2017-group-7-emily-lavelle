@@ -23,8 +23,15 @@ img {
 
 body {
 /*  max-width: 1000px;*/
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+  	margin: 0;
+  	color: #373d42;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
 }
 
 section, main, aside {
@@ -199,6 +206,69 @@ nav {
 	left: 33%;
 }
 /*End Icon Styles*/
+
+/*Quote Styles*/
+blockquote {
+	font-family: 'Rozha One', serif;
+	font-size: 1.5em;
+	margin: 0;
+	text-align: center;
+}
+
+.quotation {
+	text-align: center;
+	font-size: 6em !important;
+	padding: 0px;
+	color: #88b04b;
+	height: 73px;
+	margin: 0;
+	font-family: 'Rozha One', serif;
+}
+
+cite {
+	display: block;
+	padding-top: 25px;
+	font-size: .65em;
+}
+/*End Quote Styles*/
+
+/*Event Styles*/
+.events {
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+.special-left {
+    background-color: rgba(226, 226, 226,.4);
+}
+
+.special-right {
+	background-color: #373d42;
+	color: #ffffff;
+}
+
+.events h3 {
+	color: #88b04b;
+}
+
+.special-left, .special-right {
+	padding: 35px;
+	float: left;
+}
+
+.special-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+.special-description {
+    font-style: italic;
+}
+/*End Event Styles*/
 
 @media screen and (min-width: 600px) {
 	/*Nav Styles - Tablet/Desktop*/

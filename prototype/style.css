@@ -44,7 +44,8 @@ nav {
 }
 
 header {
-	background-image: url(../assets/images/banner2.jpg);
+	/*background-image: url(../assets/images/banner2.jpg);*/
+	background-image: url(../assets/images/new/hair10.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -66,14 +67,14 @@ nav {
 }
 
 .nav-social {
-	background-color: white;
-	text-align: right;
-	background-image: url(../assets/images/logo.png);
-	background-size: 40%;
-	background-repeat: no-repeat;
-	padding: 40px 8px;
-	background-position: left;
-	background-origin: content-box;
+    background-color: white;
+    text-align: right;
+    background-image: url(../assets/images/logo.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    padding: 22px 8px;
+    background-position: left;
+    background-origin: content-box;
 }
 
 .nav-social p{
@@ -87,7 +88,7 @@ nav {
 	padding: 0;
 	display: inline-flex;
 	background-color: #373d42;
-	padding: 20px 0px;
+	padding: 15px 0px;
 }
 
 .m-nav-pages li {
@@ -107,7 +108,7 @@ nav {
 .nav-btn {
 	display: inline-block;
 	background-color:#88b04b;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 }
 

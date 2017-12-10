@@ -130,6 +130,7 @@ nav {
 .fa {
 	color: #88b04b;
 	padding-left: 8px;
+	font-size: 18px!important;
 }
 
 /*End Nav Styles*/
@@ -138,6 +139,7 @@ nav {
 
 .intro p {
 	line-height: 35px;
+	text-align: center;
 }
 
 /*End Body Styles*/
@@ -249,7 +251,7 @@ cite {
 }
 
 .special-left, .special-right {
-	padding: 35px;
+	padding: 85px 35px;
 	float: left;
 }
 
@@ -357,6 +359,10 @@ footer ul {
 .hours-closed {
 	font-weight: 600;
 }
+
+.footer-social {
+	display: none;
+}
 /*End Footer*/
 
 @media screen and (min-width: 600px) {
@@ -365,12 +371,54 @@ footer ul {
 		position: relative;
 	}
 
+	.nav-social {
+		background-size: 25%;
+	}
+
 	.m-nav-pages {
 		display: none;
 	}
 
 	.nav-pages {
 		display: block;
+	}
+
+	.nav-pages ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	background-color: #373d42;
+	padding: 15px 0px;
+	width: 100%;
+	}
+
+	.nav-pages li {
+		text-align: center;
+		width: 25%;
+	}
+
+	.nav-pages a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.nav-pages li a:hover {
+		border-bottom: 4px solid #88b04b;
+
+	}
+
+	.nav-btn {
+		padding: 4px;
+		position: absolute;
+		top: 83px;
+		right: 0;
+		height: 53px;
+		width: 170px!important;
+	}
+
+	.nav-btn a:hover {
+		border: none!important;
 	}
 	/*End Nav Styles*/
 
@@ -388,6 +436,10 @@ footer ul {
 		width: 25%;
 	}
 	/*End Columns*/
+
+	.intro {
+		padding: 0px 75px;
+	}
 
 	.right {
 		width: 62.5%!important;
@@ -407,5 +459,24 @@ footer ul {
 		display: block;
 		padding: 0;
 		width: 100%;
+	}
+
+	footer {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.footer-social {
+		display: block;
+		padding-top: 37px;
+	}
+
+	.footer-social .fa {
+		font-size: 22px!important;
+		color: #ffffff;
+	}
+
+	.footer-social .fa:hover {
+		color: #88b04b;
 	}
 }

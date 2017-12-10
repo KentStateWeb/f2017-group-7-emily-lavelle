@@ -42,6 +42,12 @@ section, main, aside {
   margin-bottom: 1em;
 }
 
+section {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 nav {
 	z-index: 10000;
 }
@@ -75,7 +81,7 @@ nav {
     background-image: url(../assets/images/logo.png);
     background-size: 25%;
     background-repeat: no-repeat;
-    padding: 22px 8px;
+    padding: 30px 8px;
     background-position: left;
     background-origin: content-box;
 }
@@ -121,6 +127,10 @@ nav {
 	display: none;
 }
 
+.fa {
+	color: #88b04b;
+}
+
 /*End Nav Styles*/
 
 /*Body Styles*/
@@ -131,83 +141,65 @@ nav {
 
 /*End Body Styles*/
 
-/*Icon Styles*/
-.icons ul {
-	list-style-type: none;
+/*Services Styles*/
+.services img {
+	background-size: contain;
+	max-width: 100%;
+}
+
+/* relevant styles */
+.img-wrap {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.services-name {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(39,48,62,.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 50%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.15em;
+
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .services-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(55, 61, 66, .7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.services-container {
 	padding: 0;
-}
-
-.icons li {
-	height: 100px;
-	width: 100px;
-	margin: 20px;
-	display: inline-block;
-	background-color: #556166;
-	border-radius: 8px;
-}
-
-.icon-1 {
-	background-image: url(../assets/images/bridal.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40px;
-}
-.icon-2 {
-	background-image: url(../assets/images/haircut.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40px;
-}
-.icon-3 {
-	background-image: url(../assets/images/makeup.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 18px;
-}
-.icon-4 {
-	background-image: url(../assets/images/nails.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 45px;
-}
-.icon-5 {
-	background-image: url(../assets/images/spa.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40px;
-}
-
-.icon-1:hover,.icon-2:hover,.icon-3:hover,.icon-4:hover,.icon-5:hover {
-	background-color: #373d42;
-	cursor: pointer;
-}
-
-.icon-title {
-    position: relative;
-    top: 107%;
-    font-weight: 600;
-    text-align: center;
-    color: #556166;
-}
-
-.bridal {
-	left: 25%;
-}
-
-.hair {
-	left: 35%;
-}
-
-.makeup {
-	left: 20%;
-}
-
-.nails {
-	left: 30%;
-}
-
-.spa {
-	left: 33%;
+	margin: 0;
 }
 /*End Icon Styles*/
 
@@ -274,6 +266,98 @@ cite {
 }
 /*End Event Styles*/
 
+/*Product Styles*/
+
+.product {
+	float: left;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+
+.product img {
+	-webkit-filter: opacity(50%); 
+    filter: opacity(50%);
+    padding: 30px 20px;
+}
+
+.product img:hover {
+	-webkit-filter: opacity(100%); 
+    filter: opacity(100%);
+    cursor: pointer;
+}
+/*End Product Styles*/
+
+/*Slideshow*/
+.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img {
+	width: 100%;
+	height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+.slideshow {
+	display: none;
+}
+
+/*End Slideshow*/
+
+/*Map Styles*/
+.map {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.embed-maphub-logo {
+	display: none!important;
+}
+/*End Map Styles*/
+
+/*Footer Style*/
+footer {
+	background-color: #373d42;
+	color: white;
+	text-align: center;
+	padding: 45px;
+}
+
+footer h3 {
+	color: #88b04b;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul {
+	list-style-type: none;
+	line-height: 30px;
+	padding: 0;
+}
+
+.hours-closed {
+	font-weight: 600;
+}
+/*End Footer*/
+
 @media screen and (min-width: 600px) {
 	/*Nav Styles - Tablet/Desktop*/
 	nav {
@@ -303,4 +387,24 @@ cite {
 		width: 25%;
 	}
 	/*End Columns*/
+
+	.right {
+		width: 62.5%!important;
+		margin: 1% 0% 1% 0%;
+	}
+
+	.left {
+		width: 41.33%!important;
+		margin: 1% .5% 1% 0%;
+	}
+
+	.services {
+		display: inline-flex;
+	}
+
+	.slideshow {
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
 }

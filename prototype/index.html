@@ -8,12 +8,17 @@
     <meta name="description" content="Our story">
   </head>
   <body>
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-    
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
     <header class="col-12 m-col-12">
       <nav class="col-12 m-col-12">
         <div class="nav-social">
-          <p>Social media links</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
         </div>
         <div class="m-nav-pages">
           <ul class="col-12 m-col-12">
@@ -46,17 +51,39 @@
       </div>
   </section>
 
-  <section>
+  <section class="services-container">
     <h2>Our Services</h2>
-    <div class="icons">
-      <ul>
-        <a href="#"><li class="icon-1"><span class="icon-title bridal">Bridal</span></li></a>
-        <a href="#"><li class="icon-2"><span class="icon-title hair">Hair</span></li></a>
-        <a href="#"><li class="icon-3"><span class="icon-title makeup">Makeup</span></li></a>
-        <a href="#"><li class="icon-4"><span class="icon-title nails">Nails</span></li></a>
-        <a href="#"><li class="icon-5"><span class="icon-title spa">Spa</span></li></a>
-      </ul>
+    <div class="col-12 services">
+    <div class="col-4 m-col-12 left">
+      <a href="#">
+        <div class="img-wrap"><img class="img-select" src="../assets/images/services/bridal.jpg" alt="Bride"/>
+          <p class="services-name">Bridal</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="img-wrap"><img class="img-select" src="../assets/images/services/hair.jpg" alt="Man in sunglasses"/>
+          <p class="services-name">Hair</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="img-wrap"><img class="img-select" src="../assets/images/services/makeup.jpg" alt="Woman getting her makeup done"/>
+          <p class="services-name">Makeup</p>
+        </div>
+      </a>
     </div>
+    <div class="col-6 m-col-12 right">
+      <a href="#">
+        <div class="img-wrap"><img class="img-select" src="../assets/images/services/nails.jpg" alt="Customer getting their nails done"/>
+          <p class="services-name">Nails</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="img-wrap"><img class="img-select" src="../assets/images/services/spa.jpg" alt="Woman at the spa"/>
+          <p class="services-name">Spa</p>
+        </div>
+      </a>
+    </div>
+  </div>
   </section>
 
   <section class="events col-m-12 col-12">
@@ -73,23 +100,51 @@
     </div>
   </section>
 
-  <section>
-    <p>Slideshow goes here</p>
+  <section class="slideshow">
+    <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+     >
+  <div class="carousel-cell">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/IMG_7314_web.jpg">
+  </div>
+  <div class="carousel-cell">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/IMG_7315_web-710x450-2.jpg">
+  </div>
+  <div class="carousel-cell">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/IMG_7314_web.jpg">
+  </div>
+</div>
   </section>
 
   <section>
     <h2>Our Products</h2>
-    <p>logos go here</p>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="Babor" src="../assets/images/products/babor-logo.jpg" />
+    </div>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="Bumble and Bumble" src="../assets/images/products/bumble-logo.png" />
+    </div>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="Keratin" src="../assets/images/products/keratin.png" />
+    </div>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="Kevin Murphy" src="../assets/images/products/kevin-logo.jpg" />
+    </div>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="OPI" src="../assets/images/products/nailpolish.png" />
+    </div>
+    <div class="m-col-6 col-4 product clearfix">
+      <img alt="Redken" src="../assets/images/products/redken-logo.jpg" />
+    </div>
   </section>
 
-  <section>
-    <p>map goes here</p>
+  <section class="map">
+    <iframe width="100%" height="350px" src="https://maphub.net/embed/21531" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <footer>
     <div>
       <h3>Address</h3>
-      <p>Ohio Chop Shop 1911 W. Akron Ave. Akron OH 44302 </p>
+      <p>1911 W. Akron Ave. Akron OH 44302 </p>
     </div>
     <div>
       <h3>Phone</h3>
@@ -98,16 +153,19 @@
     <div>
       <h3>Hours</h3>
       <ul>
-        <li>Sunday and Monday Closed </li>
-        <li>Tuesday 10am-8pm</li>
-        <li>Wednesday 10am-8pm</li>
-        <li>Thursday 10am-8pm</li>
-        <li>Friday 9am-5pm</li>
-        <li>Saturday 8am-4pm</li>
+        <li class="hours-closed">Sunday: Closed </li>
+        <li class="hours-closed">Monday: Closed </li>
+        <li>Tuesday: 10am-8pm</li>
+        <li>Wednesday: 10am-8pm</li>
+        <li>Thursday: 10am-8pm</li>
+        <li>Friday: 9am-5pm</li>
+        <li>Saturday: 8am-4pm</li>
       </ul>
     </div>
   </footer>
   <srcipt src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="something.js"></script>
+  <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
   </body>
 </html>

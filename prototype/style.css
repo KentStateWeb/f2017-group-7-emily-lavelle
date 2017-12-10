@@ -79,7 +79,7 @@ nav {
     background-color: white;
     text-align: right;
     background-image: url(../assets/images/logo.png);
-    background-size: 25%;
+    background-size: 35%;
     background-repeat: no-repeat;
     padding: 30px 8px;
     background-position: left;
@@ -129,6 +129,7 @@ nav {
 
 .fa {
 	color: #88b04b;
+	padding-left: 8px;
 }
 
 /*End Nav Styles*/

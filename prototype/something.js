@@ -1,5 +1,3 @@
-var video = document.getElementById("myVideo");
-
 $(document).ready(function(){
   
   $('ul.tabs li').click(function(){

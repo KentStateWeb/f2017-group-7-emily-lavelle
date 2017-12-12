@@ -1,8 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Rozha+One');
 
 /*Mobile Columns*/
@@ -19,20 +17,15 @@
 	width: 25%;
 }
 /*End Columns*/
-
-
 img {
 	max-width: 100%;
 }
-
 body {
-/*  max-width: 1000px;*/
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: 400;
   	margin: 0;
   	color: #000000;
 }
-
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -40,7 +33,6 @@ h1, h2, h3 {
     text-align: center;
     color: #000;   
 }
-
 h1::after, h2::after {
 	content: "";
     display: block;
@@ -50,30 +42,24 @@ h1::after, h2::after {
     margin: 0 auto;
     margin-top: 10px;
 }
-
 section, main, aside {
   padding: 1em;
   margin-bottom: 1em;
 }
-
 section {
 	content: "";
 	clear: both;
 	display: table;
 }
-
 p, footer h3 {
 	font-size: 15px;
 }
-
 nav {
 	z-index: 10000;
 }
-
 header {
 	height: 185px;
 }
-
 .about-header {
 	background-image: url(../assets/images/header/salon.jpg);
 	background-size: cover;
@@ -81,7 +67,6 @@ header {
 	background-repeat: no-repeat;
 	height: 600px;
 }
-
 .services-header {
 	background-image: url(../assets/images/header/services.jpeg);
 	background-size: cover;
@@ -89,21 +74,17 @@ header {
 	background-repeat: no-repeat;
 	height: 600px;
 }
-
-
 #myVideo {
     right: 0;
     bottom: 0;
     max-width: 100%; 
     height: auto;
 }
-
 .content {
 	position: relative;
 	width: 100%;
 	margin: 0px auto;
 }
-
 .content::before {
 	content: "";
 	position: absolute;
@@ -113,19 +94,15 @@ header {
 	bottom: 0;
 	left: 0;
 }
-
 /*Nav Styles - Mobile*/
-
 nav {
 	position: fixed;
 	top: 0;
 	padding: 0 auto;
 }
-
 input {
 	display: none;
 }
-
 .nav-social {
     background-color: white;
     text-align: right;
@@ -136,12 +113,9 @@ input {
     background-position: left;
     background-origin: content-box;
 }
-
 .nav-social p{
 	margin: 0;
 }
-
-
 .m-nav-pages ul {
 	list-style-type: none;
 	margin: 0;
@@ -150,44 +124,33 @@ input {
 	background-color: #000000;
 	padding: 15px 0px;
 }
-
 .m-nav-pages li {
 	text-align: center;
 }
-
 .m-nav-pages a, .services a {
 	color: #fff;
 	text-decoration: none;
 }
-
 .m-nav-pages li a:hover, .services a:hover {
 	border-bottom: 4px solid #88b04b;
-
 }
-
 .nav-btn {
 	display: inline-block;
 	background-color:#88b04b;
 	padding: 15px;
 	text-align: center;
 }
-
-
-
 .nav-pages {
 	display: none;
 }
-
 .fa {
 	color: #88b04b;
 	padding-left: 8px;
 	font-size: 18px!important;
 }
-
 /*End Nav Styles*/
 
 /*Body Styles*/
-
 .intro p {
 	line-height: 35px;
 	text-align: center;
@@ -204,7 +167,6 @@ input {
 	margin: 50px 0px 0px;
 	display:none;
 }
-
 .accordion ul {
 	width: 100%;
 	display: table;
@@ -212,7 +174,6 @@ input {
 	margin: 0;
 	padding: 0;
 }
-
 .accordion ul li {
 	display: table-cell;
 	vertical-align: bottom;
@@ -222,13 +183,11 @@ input {
 	background-repeat: no-repeat;
 	transition: all 500ms ease;
 }
-
 .accordion ul li div {
 	display: block;
 	overflow: hidden;
 	width: 100%;
 }
-
 .accordion ul li div a {
 	display: block;
 	height: 500px;
@@ -241,7 +200,6 @@ input {
 	text-decoration: none;
 	transition: all 200ms ease;
 }
-
 .accordion ul li div a * {
 	opacity: 0;
 	margin: 0;
@@ -258,58 +216,47 @@ input {
 	bottom: 0;
 	margin-bottom: 130px;
 }
-
 .accordion ul li div a h2 {
 	text-overflow: clip;
 	margin-bottom: 2px;
 	top: 160px;
 }
-
 .accordion ul li div a p {
 	top: 160px;
 }
-
 .accordion ul li:nth-child(1) {background-image: url("../assets/images/services/bridal.jpg");}
 .accordion ul li:nth-child(2) {background-image: url("../assets/images/services/hair.jpg");}
 .accordion ul li:nth-child(3) {background-image: url("../assets/images/services/makeup.jpg");}
 .accordion ul li:nth-child(4) {background-image: url("../assets/images/services/nails.jpg");}
 .accordion ul li:nth-child(5) {background-image: url("../assets/images/services/spa.jpg");}
-
 .accordion ul:hover li {
 	width: 8%;
 }
-
 .accordion ul:hover li:hover {
 	width: 17%;
 }
-
 .accordion ul:hover li:hover a {
 	background: rgba(0,0,0,.4);
 }
-
 .accordion ul:hover li:hover a * {
 	opacity: 1;
 	-webkit-transform: translateX(0);
 	transfrom: translate(0);
 }
-
 .services-container {
 	padding: 0;
 	margin: 0;
 	display: none;
 }
-
 .accordion h3 {
 	color: #fff;
 	top: 50%;
 }
-
 .icons ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0px auto;
 }
-
 .icons li {
 	display: block;
 	background-color: #fff;
@@ -325,7 +272,6 @@ input {
 	color: #88b04b;
 	cursor: pointer;
 }
-
 /*End Index Services Styles*/
 
 /*Quote Styles*/
@@ -335,7 +281,6 @@ blockquote {
 	margin: 0;
 	text-align: center;
 }
-
 .quotation {
 	text-align: center;
 	font-size: 6em !important;
@@ -345,7 +290,6 @@ blockquote {
 	margin: 0;
 	font-family: 'Rozha One', serif;
 }
-
 cite {
 	display: block;
 	padding-top: 25px;
@@ -362,21 +306,17 @@ cite {
 .special-left {
     background-color: rgba(226, 226, 226,.4);
 }
-
 .special-right {
 	background-color: #000000;
 	color: #ffffff;
 }
-
 .events h3 {
 	color: #88b04b;
 }
-
 .special-left, .special-right {
 	padding: 155px 35px;
 	float: left;
 }
-
 .special-title {
     text-transform: uppercase;
     font-weight: 800;
@@ -385,40 +325,34 @@ cite {
     margin: 0;
     line-height: 20px;
 }
-
 .special-description {
     font-style: italic;
 }
 /*End Event Styles*/
 
 /*Product Styles*/
-
 .product {
 	float: left;
 	text-align: center;
 }
-
 .clearfix:before, .clearfix:after {
   content: " ";
   display: block;
   height: 0;
   overflow: hidden;
 }
-
 .clearfix:after {
     clear: both;
 }
 .clearfix {
     zoom: 1; /* IE < 8 */
 }
-
 .product img {
 	-webkit-filter: opacity(50%); 
     filter: opacity(50%);
     padding: 30px 20px;
     max-width: 55%;
 }
-
 .product img:hover {
 	-webkit-filter: opacity(100%); 
     filter: opacity(100%);
@@ -430,7 +364,6 @@ cite {
 .carousel-cell {
 	width: 100%;
 }
-
 .carousel-cell img {
 	width: 100%;
 	height: auto;

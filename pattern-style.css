@@ -1,0 +1,54 @@
+p {
+	text-align: center;
+}
+
+.color {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.color-scheme {
+	text-align: center;
+}
+
+.green {
+	background-color: #88b04b;
+}
+.black {
+	background-color: #000;
+}
+.gray {
+	background-color: rgba(226, 226, 226,.4);
+}
+
+.type1 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+}
+
+.type2 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 800;
+}
+.type3 {
+	font-family: 'Rozha One', serif;
+	font-weight: 400;
+}
+
+.type ul {
+	width: 30%;
+	padding: 0;
+	margin: 0px auto;
+	text-align: center;
+	list-style-type: none;
+}
+.type li {
+	padding-bottom: 10px;
+}
+
+.nav-btn {
+	height: 57px;
+	top: 87px;
+}

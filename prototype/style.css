@@ -107,7 +107,7 @@ header {
 .content::before {
 	content: "";
 	position: absolute;
-	background: rgba(255,255,255,.4);
+	background: rgba(0,0,255,.4);
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -202,6 +202,7 @@ input {
 	height: 500px;
 	overflow: hidden;
 	margin: 50px 0px 0px;
+	display:none;
 }
 
 .accordion ul {
@@ -295,15 +296,37 @@ input {
 .services-container {
 	padding: 0;
 	margin: 0;
+	display: none;
 }
 
 .accordion h3 {
 	color: #fff;
-	background-color: #88b04b;
-	padding: 15px 25px;
-	width: 70%!important;
+	top: 50%;
 }
-/*End Icon Styles*/
+
+.icons ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0px auto;
+}
+
+.icons li {
+	display: block;
+	background-color: #fff;
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.icons li:hover {
+	color: #88b04b;
+	cursor: pointer;
+}
+
+/*End Index Services Styles*/
 
 /*Quote Styles*/
 blockquote {
@@ -833,11 +856,31 @@ footer ul {
 }
 
 @media screen and (min-width: 800px) {
-	.slide-text {
-		position: absolute;
-		top: 75px;
-		left: 100px;
-	}
+	.content {
+	position: relative;
+	display: block;
+}
+.slide-text {
+	position: absolute;
+	top: 75px;
+	left: 100px;
+}
+
+.accordion {
+	display: block;
+}
+
+.services-container {
+	display: block;
+}
+
+.icons {
+	display: none;
+}
+
+.m-service-list {
+	display: none;
+}
 	/*Staff*/
 .main-stylist img {
 	max-width: 100%;

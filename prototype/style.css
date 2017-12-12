@@ -107,7 +107,7 @@ header {
 .content::before {
 	content: "";
 	position: absolute;
-	background: rgba(0,0,255,.4);
+	background: rgba(225,225,225,.4);
 	top: 0;
 	right: 0;
 	bottom: 0;

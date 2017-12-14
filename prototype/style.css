@@ -58,7 +58,7 @@ nav {
 	z-index: 10000;
 }
 header {
-	height: auto;
+	height: 135px;
 }
 .about-header {
 	background-image: url(../assets/images/header/salon.jpg);
@@ -573,9 +573,9 @@ footer ul {
 		position: relative;
 	}
 
-	/*header {
-		height: 135px;
-	}*/
+	header {
+		height: auto;
+	}
 
 	.m-nav-pages {
 		display: none;
